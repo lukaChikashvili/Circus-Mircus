@@ -18,7 +18,7 @@ body {
 }
 
 
-.title {
+.title, nav a {
     
     font-weight: 700;
     color: #f5f5f5;
@@ -39,3 +39,14 @@ body {
     font-family: 'Night Circus Personal Use', sans-serif;
                                                 
 }
+
+.menu {
+    background-image: url('https://t4.ftcdn.net/jpg/04/16/16/33/360_F_416163397_myi0V6RJEg2QvXyJstrus2so9fQoqyuS.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+    background-position: center;
+    font-family: var(--font);
+}
+
