@@ -7,6 +7,8 @@ import img3 from '../assets/image1_0 (1).jpg'
 import img4 from '../assets/image1_0 (3).jpg'
 import Image from 'next/image';
 import { useTransition, animated } from 'react-spring';
+import Main from './Main';
+
 
 const images = [
    img1, img2, img3, img4
@@ -41,7 +43,7 @@ const transitions = useTransition(index, {
   
 
   return (
-    <div className='w-full duration-500 '>
+    <div className='w-full  '>
      
      {transitions((style, i) => (
         <animated.div
@@ -56,7 +58,7 @@ const transitions = useTransition(index, {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: 'rgba(0, 0, 0, 1.2)', 
+            backgroundColor: 'rgba(0, 0, 0, 1.6)', 
           }}
         >
           <Image
@@ -64,10 +66,14 @@ const transitions = useTransition(index, {
             src={images[i]}
             layout="fill"
             objectFit="cover"
-            style={{ opacity: 0.8 }} 
+            style={{ opacity: 0.9 }} 
           />
         </animated.div>
       ))}
+
+
+    <Main />
+ 
     </div>
    
   )
