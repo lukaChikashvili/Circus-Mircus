@@ -4,6 +4,7 @@ import logo from '../assets/image1_0 (2).jpg';
 import Image from 'next/image';
 import { Menu } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion'
+import Link from 'next/link';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,10 +13,12 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  
+
   return (
     <>
       <div className='relative z-10 flex items-center justify-between py-6 px-8 md:px-20'>
-        <Image src={logo} alt="logo" className='w-24 rounded-full shadow-black shadow-lg' />
+        <Link href = "/"><Image src={logo} alt="logo" className='w-24 rounded-full shadow-black shadow-lg'  /></Link>
         <div className='flex items-center gap-4'>
           <span className='text-white font-bold hidden md:block'>MENU</span>
           <Menu size={40} className='text-white cursor-pointer duration-500 ease-in hover:text-yellow-400' onClick={toggleMenu} />
@@ -31,10 +34,10 @@ const Header = () => {
         className='fixed inset-0 bg-black bg-opacity-90 z-20 flex flex-col items-center justify-center text-white menu'>
           <button className='absolute top-12 right-20 text-white text-5xl' onClick={toggleMenu}>&times;</button>
           <nav className='flex flex-col gap-12 text-6xl md:text-8xl '>
-            <a href="/" onClick={toggleMenu}>Home</a>
-            <a href="/about" onClick={toggleMenu}>About</a>
-            <a href="/members" onClick={toggleMenu}>Members</a>
-            <a href="/contact" onClick={toggleMenu}>Contact</a>
+            <a href="/" onClick={toggleMenu} className='duration-300 ease-in hover:text-yellow-400 hover:-translate-y-1'>Home</a>
+            <a href="/about" onClick={toggleMenu}  className='duration-300 ease-in hover:text-yellow-400 hover:-translate-y-1'>About</a>
+            <a href="/members" onClick={toggleMenu}  className='duration-300 ease-in hover:text-yellow-400 hover:-translate-y-1'>Members</a>
+            <a href="/contact" onClick={toggleMenu}  className='duration-300 ease-in hover:text-yellow-400 hover:-translate-y-1'>Contact</a>
           </nav>
           
       
