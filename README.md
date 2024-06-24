@@ -3,6 +3,8 @@
 
 static website about circus.
 
+for live website visit: (https://circus-mircus.netlify.app/)
+
 # technologies used:
 *Next.js*
 *Tailwind.css*
