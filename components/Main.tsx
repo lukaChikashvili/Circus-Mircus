@@ -8,7 +8,7 @@ const Main = () => {
           Welcome to <span className='title'>Circus Mircus</span>
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-white mb-6">
-          Experience the magic, wonder, and excitement of the world&apos;s most spectacular circus.
+          { `Experience the magic, wonder, and excitement of the world&apos;s most spectacular circus.`}
         </p>
       </div>
     </div>
