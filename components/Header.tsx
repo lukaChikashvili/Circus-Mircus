@@ -33,7 +33,7 @@ const Header = () => {
           <nav className='flex flex-col gap-12 text-6xl md:text-8xl '>
             <a href="/" onClick={toggleMenu}>Home</a>
             <a href="/about" onClick={toggleMenu}>About</a>
-            <a href="#section3" onClick={toggleMenu}>Services</a>
+            <a href="/members" onClick={toggleMenu}>Members</a>
             <a href="#section4" onClick={toggleMenu}>Contact</a>
           </nav>
           
