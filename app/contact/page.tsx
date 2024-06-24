@@ -1,11 +1,20 @@
+"use client"
 import React from 'react';
+import { motion } from 'framer-motion'
 
 const Contact = () => {
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-black via-gray-800 to-black text-white py-16 px-8 top-0 absolute main ">
-      <h1 className="text-6xl mb-12 title mt-16">Contact Us</h1>
-      <div className="w-full max-w-4xl bg-gray-900 p-8 rounded-lg shadow-lg">
-        <form className="flex flex-col gap-6">
+      <motion.h1 initial = {{opacity: 0, translateY: 5}}
+            whileInView={{opacity: 1, translateY: 0}}
+            transition={{duration: 1.5, delay: 1}}
+       className="text-6xl mb-12 title mt-16">Contact Us</motion.h1>
+      <motion.div initial = {{opacity: 0, translateY: 5}}
+            whileInView={{opacity: 1, translateY: 0}}
+            transition={{duration: 1.5, delay: 1}} className="w-full max-w-4xl bg-gray-900 p-8 rounded-lg shadow-lg">
+        <motion.form className="flex flex-col gap-6" initial = {{opacity: 0, translateY: 5}}
+            whileInView={{opacity: 1, translateY: 0}}
+            transition={{duration: 1.5, delay: 1}}>
           <div className="flex flex-col">
             <label htmlFor="name" className="text-xl mb-2">Name</label>
             <input
@@ -38,8 +47,8 @@ const Contact = () => {
           >
             Send Message
           </button>
-        </form>
-      </div>
+        </motion.form>
+      </motion.div>
       <div className="mt-12 w-full max-w-4xl text-center">
         <h2 className="text-4xl mb-4">Get in Touch</h2>
         <p className="text-xl mb-2">Email: info@circusmircus.com</p>
