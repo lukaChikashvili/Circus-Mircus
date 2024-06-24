@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react';
 import clown from '../../assets/circus acrobats 19e8d032-dbae-47ca-8db8-413f53ec8c2d.png';
 import old from '../../assets/circus mircus 1 a4d680a1-7949-4704-9f11-7daf8d2f9e3d.png';
@@ -34,7 +32,7 @@ const About = () => {
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 1, delay: 1.6 }}
           className='text-lg mb-6'>
-          At Circus Mircus, we believe in pushing the boundaries of what's possible. Each act is designed to inspire awe
+          At Circus Mircus, we believe in pushing the boundaries of what&apos;s possible. Each act is designed to inspire awe
           and wonder, leaving spectators on the edge of their seats. From breathtaking aerial displays to heartwarming
           clown acts, every moment is crafted with precision and passion.
         </motion.p>
@@ -42,7 +40,7 @@ const About = () => {
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 1, delay: 1.8 }}
           className='text-lg mb-6'>
-          Join us under the big top and experience the magic of Circus Mircus. Whether it's your first visit or you're a
+          Join us under the big top and experience the magic of Circus Mircus. Whether it&apos;s your first visit or you&apos;re a
           returning fan, our performances promise an unforgettable adventure filled with laughter, amazement, and joy.
         </motion.p>
 
