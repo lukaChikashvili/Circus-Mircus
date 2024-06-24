@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import clown from '../../assets/circus acrobats 19e8d032-dbae-47ca-8db8-413f53ec8c2d.png';
 import old from '../../assets/circus mircus 1 a4d680a1-7949-4704-9f11-7daf8d2f9e3d.png';
