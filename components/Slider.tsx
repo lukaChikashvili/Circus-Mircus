@@ -43,7 +43,7 @@ const transitions = useTransition(index, {
   
 
   return (
-    <div className='w-full  '>
+    <div className='w-full    '>
      
      {transitions((style, i) => (
         <animated.div

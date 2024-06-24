@@ -8,14 +8,12 @@
     --font: 'Texturina', sans-serif;
 }
 
-body {
-    user-select: none;
-}
 
-.main {
+.main, .about {
     font-family: var(--font);
                                                 
 }
+
 
 
 .title, nav a {
@@ -48,5 +46,11 @@ body {
     height: 100vh;
     background-position: center;
     font-family: var(--font);
+    
 }
 
+
+
+.about h1 {
+    font-family: var(--font);
+}

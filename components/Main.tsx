@@ -13,7 +13,7 @@ const Main = () => {
 
        
         </div>
-        <h2 className='text-lg sm:text-xl md:text-2xl text-white absolute -bottom-20'>Scroll down to explore</h2>
+       
     </div>
   )
 }

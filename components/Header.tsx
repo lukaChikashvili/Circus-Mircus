@@ -31,8 +31,8 @@ const Header = () => {
         className='fixed inset-0 bg-black bg-opacity-90 z-20 flex flex-col items-center justify-center text-white menu'>
           <button className='absolute top-12 right-20 text-white text-5xl' onClick={toggleMenu}>&times;</button>
           <nav className='flex flex-col gap-12 text-6xl md:text-8xl '>
-            <a href="#section1" onClick={toggleMenu}>Home</a>
-            <a href="#section2" onClick={toggleMenu}>About</a>
+            <a href="/" onClick={toggleMenu}>Home</a>
+            <a href="/about" onClick={toggleMenu}>About</a>
             <a href="#section3" onClick={toggleMenu}>Services</a>
             <a href="#section4" onClick={toggleMenu}>Contact</a>
           </nav>
